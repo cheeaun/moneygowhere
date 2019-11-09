@@ -27,6 +27,11 @@ img {
   vertical-align: middle;
 }
 
+input, select {
+  font-size: inherit;
+  font-family: inherit;
+}
+
 .block {
   display: block;
 }
