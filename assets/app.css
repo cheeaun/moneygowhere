@@ -27,7 +27,7 @@ img {
   vertical-align: middle;
 }
 
-input, select {
+input, select, button {
   font-size: inherit;
   font-family: inherit;
 }
