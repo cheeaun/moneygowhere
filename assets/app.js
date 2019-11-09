@@ -192,7 +192,10 @@ const App = () => {
                   <select onChange={e => setCardID(e.target.value)}>
                     <option selected>All cards</option>
                     {data.cards.map(c => (
-                      <option value={c.id}>{fakeCardNumber(c.id)}</option>
+                      <option value={c.id}>
+                        {c.name}{'—'}
+                        {fakeCardNumber(c.id)}
+                      </option>
                     ))}
                   </select>
                 </label>

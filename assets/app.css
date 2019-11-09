@@ -121,6 +121,7 @@ input, select {
 }
 #card-selector select {
   margin-left: 4px;
+  max-width: 8em;
 }
 
 #pie {
@@ -209,6 +210,11 @@ input, select {
     float: right;
     width: 320px;
   }
+
+  #card-selector select {
+    max-width: 16em;
+  }
+
   #transactions {
     display: table;
     float: left;
@@ -217,7 +223,6 @@ input, select {
   #transactions tbody {
     display: table-row-group;
   }
-
   #transactions tr {
     display: table-row;
   }
