@@ -170,9 +170,15 @@ img {
   font-size: .75em;
   text-transform: uppercase;
   color: rgba(0,0,0,.6);
-  background-color: rgba(5, 172, 214, 0.123);
+  border: 1px solid rgba(0,0,0,.1);
   padding: 2px 5px;
   border-radius: 15px;
+}
+#transactions .cat-circle {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
 }
 #transactions .account {
   font-size: .75em;

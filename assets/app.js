@@ -226,7 +226,13 @@ const App = () => {
                     </td>
                     <td class="description">
                       {t.description}<br />
-                      {!!t.category && <span class="category">{t.category}</span>}
+                      {!!t.category && (
+                        <span class="category">
+                          <span class="cat-circle" style={{ backgroundColor: pieData.find((d => d.title === t.category)).color }}></span>
+                          {' '}
+                          {t.category}
+                        </span>
+                      )}
                       {!!t._account_id && (
                         <span class="account">
                           {data.accounts.find((acc) => acc.id === t._account_id).name}
