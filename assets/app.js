@@ -187,13 +187,15 @@ const App = () => {
                 </select>
               </span>
               <span id="card-selector">
-                <img height="13" src={creditCardImg} />
-                <select onChange={e => setCardID(e.target.value)}>
-                  <option selected>All cards</option>
-                  {data.cards.map(c => (
-                    <option value={c.id}>{fakeCardNumber(c.id)}</option>
-                  ))}
-                </select>
+                <label>
+                  <img height="13" src={creditCardImg} alt="" />
+                  <select onChange={e => setCardID(e.target.value)}>
+                    <option selected>All cards</option>
+                    {data.cards.map(c => (
+                      <option value={c.id}>{fakeCardNumber(c.id)}</option>
+                    ))}
+                  </select>
+                </label>
               </span>
               {!!(category || cardID) && (
                 <button type="button" onClick={() => {
