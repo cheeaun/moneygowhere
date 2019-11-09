@@ -65,6 +65,7 @@ img {
   padding: 10px 5px;
   display: flex;
   overflow: auto;
+  scroll-behavior: smooth;
 }
 #month-selector li {
   min-width: 15em;
