@@ -219,7 +219,7 @@ const App = () => {
                 const showDateStamp = t.date !== prevDateStamp;
                 prevDateStamp = t.date;
                 return (
-                  <tr>
+                  <tr class={/(0|6)/.test(date.getDay()) ? 'weekend' : ''}>
                     <td class="timestamp">
                       {showDateStamp && (
                         <>

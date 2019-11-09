@@ -146,10 +146,15 @@ input, select, button {
   display: block;
   width: 100%;
 }
-
+#transactions {
+  border-spacing: 0;
+}
 #transactions tr {
   display: flex;
   flex-wrap: wrap;
+}
+#transactions tr.weekend {
+  background-color: rgb(254, 255, 246);
 }
 #transactions td:not(:empty) {
   padding: 10px;
