@@ -50,6 +50,7 @@ input, select {
 
 .amount {
   color: rgb(0, 73, 2);
+  font-variant-numeric: tabular-nums;
 }
 .amount.negative {
   color: rgb(107, 0, 36);
