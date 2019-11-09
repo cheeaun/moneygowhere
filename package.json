@@ -1,0 +1,23 @@
+{
+  "name": "moneygowhere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.0-alpha.2.1"
+  },
+  "dependencies": {
+    "preact": "^10.0.4",
+    "react-minimal-pie-chart": "^5.0.2"
+  },
+  "alias": {
+    "react": "preact/compat",
+    "react-dom": "preact/compat"
+  }
+}
