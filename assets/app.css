@@ -62,7 +62,7 @@ input, select {
 .container,
 #month-selector,
 #transactions {
-  max-width: 1200px;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -203,7 +203,7 @@ input, select {
   line-height: .8em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 660px) {
   #pie {
     float: right;
     width: 320px;
