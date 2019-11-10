@@ -8,8 +8,6 @@ import data from '../data.json';
 // Parcel imports JSON file as JS data, instead of an external static file https://github.com/parcel-bundler/parcel/issues/501
 // TODO: fetch() the data file or API instead
 
-console.log(data);
-
 const TRANSACTIONS = [];
 data.accounts.forEach(account => {
   const tx = account.transactions.map(transaction => ({
@@ -27,8 +25,6 @@ data.cards.forEach(card => {
   TRANSACTIONS.push(...tx);
 });
 
-console.log({ TRANSACTIONS });
-
 const cashflowByMonth = {};
 let maxAmount = 0;
 TRANSACTIONS.forEach(transaction => {
@@ -44,7 +40,6 @@ TRANSACTIONS.forEach(transaction => {
     if (Math.abs(amount) > maxAmount) maxAmount = Math.abs(amount);
   }
 });
-console.log({ cashflowByMonth, maxAmount });
 
 // 7 colors, have to add more if there are more categories...
 // Stolen from https://projects.susielu.com/viz-palette
@@ -77,7 +72,6 @@ const App = () => {
     // Using hashchange instead of a routing library
     const hashchange = () => {
       const [_, month] = location.hash.match(/month-(\d+)/) || [,];
-      console.log(month);
       if (month) {
         setMonth(month);
         monthSelectorRef.current.scrollLeft = document.getElementById(`month-${month}`).offsetLeft - window.innerWidth/6;
@@ -116,7 +110,6 @@ const App = () => {
       color: COLORS[i],
     });
   });
-  console.log(pieData);
 
   let prevDateStamp = null;
 
