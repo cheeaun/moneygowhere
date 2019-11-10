@@ -169,7 +169,7 @@ const App = () => {
         )}
         <div id="transactions-header">
           <h3>Transactions</h3>
-          {!!transformedTransactions.length && (
+          {(
             <div class="selectors">
               <span id="category-selector">
                 <select value={category} onChange={e => setCategory(e.target.value)}>
@@ -182,7 +182,7 @@ const App = () => {
               <span id="card-selector">
                 <label>
                   <img height="13" src={creditCardImg} alt="" />
-                  <select onChange={e => setCardID(e.target.value)}>
+                  <select value={cardID} onChange={e => setCardID(e.target.value)}>
                     <option selected>All cards</option>
                     {data.cards.map(c => (
                       <option value={c.id}>
