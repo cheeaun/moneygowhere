@@ -173,7 +173,7 @@ const App = () => {
             <div class="selectors">
               <span id="category-selector">
                 <select value={category} onChange={e => setCategory(e.target.value)}>
-                  <option selected>Categories</option>
+                  <option selected>All categories</option>
                   {categories.map(c => (
                     <option value={c}>{c}</option>
                   ))}
@@ -253,7 +253,7 @@ const App = () => {
                 );
               })
             ) : (
-              <div class="container">No transactions available yet.</div>
+              <div class="container">Either no transactions available yet or none matching the active filters.</div>
             )}
           </tbody>
         </table>
